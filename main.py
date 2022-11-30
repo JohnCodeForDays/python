@@ -10,7 +10,7 @@ def calculate_depth_increase(depths):
 
     for depth in depths:
         # we could make the case here that we want to ensure long before this point,
-        # that every entry was a valid int or number..
+        # that every entry was a valid int or number
         if depth > previous_depth:
             depth_increase_counts += 1
         previous_depth = depth
@@ -18,7 +18,6 @@ def calculate_depth_increase(depths):
     return depth_increase_counts
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
     try:
@@ -34,8 +33,3 @@ if __name__ == '__main__':
         print("Something is wrong with your file, champ..\n")
         print(eio)
 
-
-
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
